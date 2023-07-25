@@ -40,7 +40,7 @@ const App = () => {
 			<div className="container">
 				<Search onSearchChange={handleOnSearchchange} />
 				{currentWeather && <CurrentWeather data={currentWeather} />}
-				<Forecast />
+				{forecast && <Forecast data={forecast} />}
 			</div>
 		</>
 	);
